@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <script>
+    function dearlord() {
+   
+      //Sample Output : Today is : Friday. 
+      //Current time is : 4 PM : 50 : 22
+      
+      var today = new Date();
+      var dd    = today.getDay();
+      
+      var hour  = today.getHours();
+      var min   = today.getMinutes();
+      var sec   = today.getSeconds()
+      var days  = 
+      [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+      ]
+   
+      if (hour > 12 ) {
+        hour += ' PM';
+      }
+      else {
+        hour += ' AM';
+      }
+      
+      var todayMate = 'Today is : ' + days[dd];
+      
+      var current = 'Current time is : ' + hour + ' : ' + min + ' : ' + sec;   
+      
+      document.getElementById('headline').innerHTML = todayMate;
+      document.getElementById('nextline').innerHTML = current;
+      
+      }
+    
+  </script>
+  
+  <button onclick="dearlord()">Try it</button>
+  
+  <h1 id='headline' ></h1>
+  <h1 id='nextline' ></h1>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+</html>
