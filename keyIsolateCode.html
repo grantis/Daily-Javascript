@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>key property iso</title>
+</head>
+<body>
+<script>
+  
+  
+  var student = { 
+  firstname : "John Very", 
+  lastname : "Doe", 
+  gender : 12,
+  age: 99,
+  employment: "requested",
+  other: "things"
+};
+
+var key1 = Object.keys(student);
+
+function myFunction() {
+    document.getElementById("myText").innerHTML = key1;
+}
+
+
+//alert(key1);
+  
+</script>
+
+<h1 id="text-h1"> </h1>
+
+
+<button onclick="myFunction()"><h1>List the key values<h1></button>
+
+<br/>
+<h1 id="myText" > var student = { <br/>
+  <mark>firstname </mark>: "John Very", <br/>
+  <mark>lastname </mark>: "Doe", <br/>
+  <mark>gender</mark> : 12, <br/>
+  <mark>age</mark>: 99, <br/>
+  <mark>employment</mark>: "requested", <br/>
+  <mark>other</mark>: "things" <br/>
+}; <br/> </h1>
+</body>
+</html>
